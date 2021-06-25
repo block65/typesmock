@@ -2,9 +2,9 @@
 import { Module } from 'module';
 import * as path from 'path';
 import { pathToFileURL } from 'url';
-import type { MockModule } from './global.js';
 import { mockGet, mockModules, mockSet } from './mock-modules.js';
 import { getIssuer, internalResolveKey, logger } from './shared.js';
+import { MockModule } from './types.js';
 
 // @ts-ignore
 const defaultCommonJsLoader = Module._load;

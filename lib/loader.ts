@@ -7,10 +7,10 @@ import type {
   GetFormat,
   GetSource,
   Loader,
+  MockModule,
   ResolveHook,
   TransformSource,
-} from '../merge-loaders.js';
-import type { MockModule } from './global.js';
+} from './types.js';
 import { mockGet } from './mock-modules.js';
 import { internalResolveKey, logger } from './shared.js';
 

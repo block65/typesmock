@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
-import { MockModule } from './global.js';
 import { logger } from './shared.js';
+import { MockModule } from './types.js';
 
 global._mockModules = global._mockModules || new Map<string, MockModule>();
 
