@@ -4,11 +4,11 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./dist/lib/index.js",
-    "./loader": "./dist/lib/loader.js"
+    ".": "./dist/index.js",
+    "./loader": "./dist/loader.js"
   },
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts"
@@ -17,7 +17,7 @@
     "build": "tsc",
     "build:clean": "rimraf dist/*",
     "build:watch": "yarn build -w",
-    "prepare": "yarn test && yarn build:clean && yarn build",
+    "prepare": "yarn build:clean && yarn build && yarn test",
     "test": "ava"
   },
   "dependencies": {

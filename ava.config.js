@@ -8,7 +8,7 @@ export default function factory() {
     },
     nodeArguments: [
       '--experimental-import-meta-resolve',
-      '--loader=./dist/lib/loader.js',
+      '--loader=./dist/loader.js',
     ],
   };
 }
